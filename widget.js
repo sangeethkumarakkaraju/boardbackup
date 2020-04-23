@@ -2884,7 +2884,7 @@
 
     function setSelection(element, prop) {
         endLastPath();
-        hideContainers();
+        //hideContainers();
 
         is.set(prop);
 

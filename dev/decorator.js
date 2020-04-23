@@ -34,7 +34,7 @@ if (tools.code === true) {
 
 function setSelection(element, prop) {
     endLastPath();
-    hideContainers();
+    //hideContainers();
 
     is.set(prop);
 
@@ -876,4 +876,10 @@ function setTemporaryLine() {
     }, 1000);
 
     setTimeout(setDefaultSelectedIcon, 2000);
+}
+
+function decoratePaint(){
+    var context = getContext('paint-icon');
+
+    bindEvent(context, 'FeatureSelected');
 }
