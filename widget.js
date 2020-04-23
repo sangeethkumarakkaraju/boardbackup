@@ -10,20 +10,21 @@
 (function() {
 
     var is = {
-        isLine: false,
-        isArrow: false,
-        isArc: false,
-        isDragLastPath: false,
-        isDragAllPaths: false,
-        isRectangle: false,
-        isQuadraticCurve: false,
-        isBezierCurve: false,
-        isPencil: false,
+        isLine: true,
+        isArrow: true,
+        isArc: true,
+        isDragLastPath: true,
+        isDragAllPaths: true,
+        isRectangle: true,
+        isQuadraticCurve: true,
+        isBezierCurve: true,
+        isPencil: true,
         isMarker: true,
-        isEraser: false,
-        isText: false,
-        isImage: false,
-        isPdf: false,
+        isEraser: true,
+        isText: true,
+        isImage: true,
+        isPdf: true,
+		
 
         set: function(shape) {
             var cache = this;
