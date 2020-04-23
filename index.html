@@ -263,7 +263,7 @@ var designer = new CanvasDesigner();
 
 // you can place widget.html anywhere
 designer.widgetHtmlURL = 'widget.html';
-designer.widgetJsURL = 'widget.min.js'
+designer.widgetJsURL = 'widget.js'
 
 designer.addSyncListener(function(data) {
     connection.send(data);
@@ -434,18 +434,18 @@ document.getElementById('btn-getDataURL').onclick = function() {
     // closeDataURLPopup();
 };
 
-document.getElementById('btn-close-comments-popup').onclick = function() {
-    document.getElementById('comments-popup').style.display = 'none';
-    document.getElementById('fade').style.display = 'none';
+// document.getElementById('btn-close-comments-popup').onclick = function() {
+//     document.getElementById('comments-popup').style.display = 'none';
+//     document.getElementById('fade').style.display = 'none';
 
-    dataURLFormat.onchange();
-};
+//     dataURLFormat.onchange();
+// };
 
 function showCommentsPopup(e) {
     document.getElementById('comments-popup').style.display = 'block';
     document.getElementById('fade').style.display = 'block';
 }
-document.getElementById('btn-comments').onclick = showCommentsPopup;
+//document.getElementById('btn-comments').onclick = showCommentsPopup;
 if (location.hash.length && location.hash.indexOf('comment') !== -1) {
     showCommentsPopup();
 }
